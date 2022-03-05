@@ -9,6 +9,7 @@ ShaderImporter:
   - _BumpMap: {instanceID: 0}
   - _WindMap: {fileID: 2800000, guid: 58ee3d953f2ad1d4bb6dce9e0821b8c0, type: 3}
   nonModifiableTextures: []
+  preprocessorOverride: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
