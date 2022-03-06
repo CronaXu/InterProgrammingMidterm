@@ -10,7 +10,7 @@ Material:
   m_Name: M_URPWater_Demo_Caustics3D
   m_Shader: {fileID: 4800000, guid: 206e4b0fd7976c742b851eef70622872, type: 3}
   m_ShaderKeywords: _CAUSTICSMODE_3D _CAUSTICS_ON _COLORMODE_COLORS _DISPLACEMENTMODE_GERSTNER
-    _EDGEFADE_ON _NORMALSMODE_SINGLE _REFLECTIONMODE_PROBES
+    _DOUBLE_SIDED_ON _EDGEFADE_ON _NORMALSMODE_SINGLE _REFLECTIONMODE_REALTIME _SCATTERING_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -137,7 +137,7 @@ Material:
     - _ClearCoatSmoothness: 0
     - _ColorMode: 0
     - _Cull: 2
-    - _CullMode: 2
+    - _CullMode: 0
     - _CutOff: 0.5
     - _Cutoff: 0.5
     - _DepthEnd: 6
@@ -147,7 +147,7 @@ Material:
     - _DispMask: 0
     - _DisplacementMode: 1
     - _Distortion: 32
-    - _DoubleSided: 0
+    - _DoubleSided: 1
     - _DstBlend: 0
     - _DynamicDisplacement: 1
     - _DynamicEffects: 0
@@ -192,9 +192,9 @@ Material:
     - _ReflectionFresnel: 4
     - _ReflectionFresnelNormal: 0.264
     - _ReflectionIntensity: 1
-    - _ReflectionMode: 2
+    - _ReflectionMode: 3
     - _ReflectionRoughness: 0.1
-    - _Scattering: 0
+    - _Scattering: 1
     - _ScatteringIntensity: 1
     - _ScatteringRangeMax: 2
     - _ScatteringRangeMin: 0.4131296
@@ -219,7 +219,7 @@ Material:
     - _CausticsSpeed3D: {r: 1, g: 1, b: 1, a: 1}
     - _CausticsTiling: {r: 0.2, g: 0.2, b: 0.1, a: 0.1}
     - _Color: {r: 0.6367924, g: 1, b: 0.84686387, a: 1}
-    - _DepthColor: {r: 0, g: 0.25999996, b: 0.39999998, a: 1}
+    - _DepthColor: {r: 0.17254902, g: 0.6184466, b: 0.85882354, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FlowTiling: {r: 1, g: 1, b: 0, a: 0}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
@@ -244,7 +244,7 @@ Material:
     - _RefractionKey8: {r: -1, g: -1, b: -1, a: -1}
     - _ScatteringColor: {r: 0.2783019, g: 1, b: 0.78321666, a: 1}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
-    - _UnderWaterColor: {r: 0.21226415, g: 0.46418187, b: 0.8490566, a: 0.1764706}
+    - _UnderWaterColor: {r: 0.3890174, g: 0.7286446, b: 0.8867924, a: 0.22745098}
   m_BuildTextureStacks: []
 --- !u!114 &3734885289509101253
 MonoBehaviour:
