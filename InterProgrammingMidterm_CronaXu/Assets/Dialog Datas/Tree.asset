@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad1cb1933e78348f4902dd9901891ef5, type: 3}
+  m_Name: Tree
+  m_EditorClassIdentifier: 
+  dialogPieces:
+  - ID: 110
+    image: {fileID: 0}
+    text: There seems to be something buried under this tree...
+    options: []
+  - ID: 111
+    image: {fileID: 0}
+    text: Some disgusting dead soil! Is it the reason why all the trees here are
+      dead? I guess I need to bring it back to the cherry tree.
+    options: []

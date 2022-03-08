@@ -15,7 +15,7 @@ public class PlayerMove : MonoBehaviour
     // Simulate gravity
     private Vector3 velocity;
     private bool isGrounded;
-    private float gravity = -9.8f;
+    private float gravity = -19.6f;
 
     void Start()
     {
@@ -55,7 +55,7 @@ public class PlayerMove : MonoBehaviour
     // Check if player is grounded
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        Debug.Log(isGrounded);
+        //Debug.Log(isGrounded);
         if (hit.gameObject.name == "Terrain")
         {
             isGrounded = true;
