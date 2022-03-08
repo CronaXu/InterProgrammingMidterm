@@ -4,23 +4,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    // Show what player has collected
     public bool hasWater = false;
     public bool hasSeed = false;
     public bool hasSoil = false;
     public int appleFilled = 0;
 
     public int treeStatus = 1;
-    [SerializeField]
-    private AudioSource soundEffects;
-    [SerializeField]
-    private AudioClip water;
-    [SerializeField]
-    private AudioClip seed;
-    [SerializeField]
-    private AudioClip soil;
-    [SerializeField]
-    private AudioClip treeGrowth;
 
+    public AudioSource TreeSound;
     // Different growth levels of the sakura
     [SerializeField]
     private GameObject Sakura1;
@@ -31,6 +23,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject Sakura4;
 
+    public GameObject endScreen;
+
     // When player step close to the sakura, let it grow according to the number of objects player has collected
     private void OnTriggerEnter(Collider other)
     {
@@ -38,21 +32,25 @@ public class GameManager : MonoBehaviour
         {
             if (treeStatus == 2)
             {
+                TreeSound.Play();
                 Sakura1.SetActive(false);
                 Sakura2.SetActive(true);
             }
             else if (treeStatus == 3)
             {
+                TreeSound.Play();
                 Sakura1.SetActive(false);
                 Sakura2.SetActive(false);
                 Sakura3.SetActive(true);
             }
             else if (treeStatus == 4)
             {
+                TreeSound.Play();
                 Sakura1.SetActive(false);
                 Sakura2.SetActive(false);
                 Sakura3.SetActive(false);
                 Sakura4.SetActive(true);
+                endScreen.SetActive(true);
             }
 
         }

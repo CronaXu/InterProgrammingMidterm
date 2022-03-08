@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+ * The dialog system is the new coding technique I have used in this game.
+ * The dialog system makes good use of scriptable objects, singleton and is comparably complicated.
+ * It has a unique data structure to manage UI and data at the same time.
+ * The system is very flexible, and many other functions can be easily implemented with the similar structure.
+ */
 public class DialogController : MonoBehaviour
 {
     public DialogData currentData;
