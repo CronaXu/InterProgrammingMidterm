@@ -43,7 +43,7 @@ LODGroup:
   serializedVersion: 2
   m_LocalReferencePoint: {x: 0, y: 12.35009, z: 0}
   m_Size: 53.644707
-  m_FadeMode: 1
+  m_FadeMode: 0
   m_AnimateCrossFading: 1
   m_LastLODIsBillboard: 0
   m_LODs:
@@ -148,7 +148,6 @@ GameObject:
   - component: {fileID: 3794241717761710699}
   - component: {fileID: 7660781924373437127}
   - component: {fileID: 5943433503963114926}
-  - component: {fileID: 6006322510349419278}
   m_Layer: 0
   m_Name: LOD_0
   m_TagString: Untagged
@@ -220,26 +219,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6006322510349419278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6592238869634236009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1.4.1
-  shaderType: 3
-  editorWindAlways: 0
-  editorWindEnabled: 0
-  windType: 0
-  windQuality: 3
-  localWindAmplitude: 0.6
-  windMain: 0
-  sproutTurbulance: 1
-  sproutSway: 1
-  windScale: 1
